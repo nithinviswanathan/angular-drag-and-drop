@@ -1,9 +1,10 @@
-// Import the core angular services.
-import { Component } from '@angular/core';
-import { ElementRef } from '@angular/core';
-import { EventEmitter } from '@angular/core';
-import { OnDestroy } from '@angular/core';
-import { OnInit } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  OnDestroy,
+  OnInit,
+} from '@angular/core';
 
 // ----------------------------------------------------------------------------------- //
 // ----------------------------------------------------------------------------------- //
