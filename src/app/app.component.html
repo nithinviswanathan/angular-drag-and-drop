@@ -1,0 +1,29 @@
+<my-draggable>
+<my-draggable-item
+  *ngFor="let item of items"
+  [left]="item.position.left"
+  [top]="item.position.top"
+  (dragStart)="enableDragProtection()"
+  (dragEnd)="disableDragProtection()"
+  (move)="updateItemPosition( item, $event.left, $event.top )">
+  <div class="item">{{ item.label }}</div>
+</my-draggable-item>
+</my-draggable>
+
+<label class="toggle">
+<input
+  #toggle
+  type="checkbox"
+  checked
+  (click)="handleShieldToggle( toggle.checked )"
+/>
+Use drag-shield while dragging.
+</label>
+
+<div
+*ngIf="( isProtectingDragAction && isUsingShieldInDemo )"
+class="drag-shield">
+<span class="drag-shield__message">
+  I am here to prevent mouse-events from hitting lower-level DOM elements.
+</span>
+</div>
