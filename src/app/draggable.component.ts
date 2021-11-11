@@ -11,7 +11,7 @@ import {
 
 @Component({
   selector: 'my-draggable',
-  styleUrls: ['./draggable.component.less'],
+  styleUrls: ['./draggable.component.css'],
   template: `
 		<ng-content></ng-content>
 	`,
@@ -44,7 +44,7 @@ interface Position {
     '[style.left.px]': 'left',
     '[style.top.px]': 'top',
   },
-  styleUrls: ['./draggable-item.component.less'],
+  styleUrls: ['./draggable-item.component.css'],
   template: `
 		<ng-content></ng-content>
 	`,

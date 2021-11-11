@@ -15,7 +15,7 @@ interface Item {
 
 @Component({
   selector: 'my-app',
-  styleUrls: ['./app.component.less'],
+  styleUrls: ['./app.component.css'],
   templateUrl: './app.component.html',
 })
 export class AppComponent {
