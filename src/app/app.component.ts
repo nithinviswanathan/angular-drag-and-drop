@@ -1,8 +1,4 @@
-// Import the core angular services.
 import { Component } from '@angular/core';
-
-// ----------------------------------------------------------------------------------- //
-// ----------------------------------------------------------------------------------- //
 
 interface Item {
   id: number;
@@ -23,11 +19,10 @@ export class AppComponent {
   public isUsingShieldInDemo: boolean;
   public items: Item[];
 
-  // I initialize the app component.
   constructor() {
     this.isProtectingDragAction = false;
     this.isUsingShieldInDemo = true;
-    this.items = this.generateItems(30, 500, 500);
+    this.items = this.generateItems(5, 400, 400);
   }
 
   // ---
